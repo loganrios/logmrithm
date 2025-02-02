@@ -5,6 +5,7 @@
    :user [:map {:closed true}
           [:xt/id                     :user/id]
           [:user/email                :string]
+          [:user/password-hash        :string]
           [:user/joined-at            inst?]
           [:user/foo {:optional true} :string]
           [:user/bar {:optional true} :string]]

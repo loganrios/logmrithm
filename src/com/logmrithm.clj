@@ -2,6 +2,7 @@
   (:require [com.biffweb :as biff]
             [com.logmrithm.email :as email]
             [com.logmrithm.app :as app]
+            [com.logmrithm.auth :as auth]
             [com.logmrithm.home :as home]
             [com.logmrithm.middleware :as mid]
             [com.logmrithm.ui :as ui]
@@ -17,7 +18,7 @@
 
 (def modules
   [app/module
-   (biff/authentication-module {})
+   auth/module
    home/module
    schema/module
    worker/module])
